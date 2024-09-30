@@ -1,0 +1,18 @@
+POST http://localhost:8080/api/student/create
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "sabina"
+}
+###
+GET http://localhost:8080/api/student/getAll
+
+###
+POST http://localhost:8080/api/student/create
+Content-Type: application/json
+
+{
+  "name": "sardor",
+  "book": [{"id": 3}]
+}

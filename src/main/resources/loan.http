@@ -1,0 +1,59 @@
+POST http://localhost:8080/library/add
+Content-Type: application/json
+
+{
+  "bookId": 1,
+  "studentId": 1
+}
+
+###
+GET http://localhost:8080/library/get
+
+
+###
+POST http://localhost:8080/library/add
+Content-Type:application/json
+
+{
+  "itemDtos": [
+    {
+      "studentId": 1,
+      "bookId": [
+        1,
+        2
+      ]
+    }
+  ]
+}
+###
+POST http://localhost:8080/library/add
+Content-Type: application/json
+
+{
+  "b": [{"id": 1}],
+  "s": [{"id": 1}]
+}
+###
+POST http://localhost:8080/library/add
+Content-Type: application/json
+
+{
+  "bookId": 1,
+  "studentId": 1
+}
+
+###
+POST http://localhost:8080/library/add
+Content-Type: application/json
+
+{
+  "studentId": 1,
+  "bookId": [1]
+}
+###
+POST http://localhost:8080/library/add
+Content-Type: application/json
+
+{
+  "bookId": []
+}

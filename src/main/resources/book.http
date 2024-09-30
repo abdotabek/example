@@ -1,0 +1,46 @@
+POST http://localhost:8080/api/book/create
+Content-Type: application/json
+
+{
+  "title": "saodat asri",
+  "description": " tarixi"
+}
+###Get
+GET http://localhost:8080/api/book/get/2
+
+###
+DELETE http://localhost:8080/api/book/delete/1
+###
+PUT http://localhost:8080/api/book/update/2
+Content-Type: application/json
+
+{
+  "title": "tarix ustozi",
+  "description": "Abdulloh ibn Muborak"
+}
+###
+GET http://localhost:8080/api/book/getAll
+
+###
+DELETE http://localhost:8080/api/book/delete/all
+
+###
+POST http://localhost:8080/api/book/create
+Content-Type: application/json
+
+{
+  "id": 4,
+  "name": "tarix",
+  "student": {
+
+  }
+}
+
+###
+POST http://localhost:8080/library/add
+Content-Type:application/json
+
+{
+  "bookId": [1,2],
+  "studentId": 2
+}
