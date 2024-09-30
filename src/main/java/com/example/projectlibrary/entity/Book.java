@@ -16,5 +16,4 @@ public class Book {
     private String title;
     @Column
     private String description;
-
 }

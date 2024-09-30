@@ -14,6 +14,6 @@ public class Library {
     private Long id;
     @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     private List<Book> books;
-    @OneToMany(cascade = CascadeType.ALL)
+    @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     private List<Student> students;
 }
